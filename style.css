@@ -1,0 +1,49 @@
+@view-transition {
+  navigation: auto;
+}
+
+
+body {
+  font-family: system-ui, Arial;
+  padding: 3rem;
+  color: black;
+}
+
+/* links */
+a {
+  display: inline-block;
+  margin: .5rem 0;
+}
+
+/* card + header styling */
+header {
+  margin-bottom: 2rem;
+  transition: all .45s ease;
+}
+
+.card {
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
+  background: #fff;
+  width: 320px;
+}
+
+/* Incoming animation  */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all .45s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+} 
+
+/* Outgoing animation */
+html.leaving .reveal {
+  opacity: 0;
+  transform: translateY(-12px);
+  transition: all .35s ease;
+}
