@@ -36,6 +36,12 @@ header {
   transition: all .45s ease;
 }
 
+.default{
+  opacity: 1;
+  transform: translateY(0);
+  transition: all .45s ease;
+}
+
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
